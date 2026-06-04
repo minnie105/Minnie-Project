@@ -4,7 +4,7 @@
   <br /><sub><b>Minnie Wang</b></sub>
 </a>
 
-## Short Bio: Just a struggling sophomore student.
+## Short Bio: Just a struggling sophomore student from NCU-TW.
 
 I am currently learning the basics of deep learning, neuroimaging, and related fields (just getting started!).
 
