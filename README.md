@@ -12,6 +12,11 @@ I am currently learning the basics of deep learning, neuroimaging, and related f
 * **Field**: Everything learned from EE professors (maybe a little or none of it)
 * **Environment**: Linux / VS Code
 ---
+## 📊 Dataset & Train-Test Splits
+* **Data Source**: OpenNeuro [ds000221](https://openneuro.org/datasets/ds000221) — A multi-shell diffusion MRI dataset targeting healthy aging and neurodegenerative subjects.
+* **Cohort Context**: The complete dataset consists of 318 participants across an adult lifespan to investigate mind-brain-body interactions in the aging brain.
+* Diffusion-Weighted Imaging (DWI) data is available for **228 participants**.
+---
 ## dMRI Data Processing Pipeline
 
 The current stage of this project focuses on converting diffusion MRI data into fixed-size white-matter image tensors for subsequent CNN training.
@@ -37,6 +42,10 @@ The generated CNN input is stored as a compressed `.npz` file with the expected 
 ```text
 (4, X, Y, Z)
 ```
+**Proposed Model Architecture**
+
+Since the preprocessed inputs are 3D volumetric tensors with 4 distinct channels, the next stage of the project will implement a 3D Convolutional Neural Network (3D-CNN) architecture (such as a 3D ResNet variant).
+The model will treat the multi-channel scalar maps as volumetric features to automatically analyze structural alterations and identify underlying patterns associated with the aging brain.
 
 ### Current Status
 
