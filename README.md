@@ -42,7 +42,7 @@ The generated CNN input is stored as a compressed `.npz` file with the expected 
 ```text
 (4, X, Y, Z)
 ```
-**Proposed Model Architecture**
+### Proposed Model Architecture
 
 Since the preprocessed inputs are 3D volumetric tensors with 4 distinct channels, the next stage of the project will implement a 3D Convolutional Neural Network (3D-CNN) architecture (such as a 3D ResNet variant).
 The model will treat the multi-channel scalar maps as volumetric features to automatically analyze structural alterations and identify underlying patterns associated with the aging brain.
